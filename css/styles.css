@@ -1,0 +1,104 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(203, 203, 248);
+}
+
+.wrapper{
+    border: 1px solid white;
+    padding: 2%;
+    border-radius: 10px;
+    width: 485px;
+    background-image: linear-gradient(to right, rgb(116, 116, 248), white);
+    box-shadow: 5px 5px 5px 5px rgb(164, 164, 243);
+}
+
+.wrapper .captcha-area{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100%; */
+    height: 65px;
+    margin: 1% auto 5%;
+}
+
+.wrapper .captcha-img{
+    height: 100%;
+    width: 345px;
+}
+
+.captcha-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.captcha-img .captcha{
+    position: absolute;
+    /* transform: translate(-50%,50%); */
+    left: 5rem;
+    top: 0.25rem;
+    color: rgb(255, 255, 255);
+    font-weight: 450;
+    font-size: 2.5rem;
+    letter-spacing: 1rem;
+    
+}
+
+.captcha-area button
+{
+    height: 70%;
+    background-color: rgb(201, 201, 253);
+    border-radius: 5px;
+}
+
+.captcha-area button:hover{
+    background-color: rgb(235, 235, 253);
+}
+.fa-solid{
+    width: 50px;
+    font-size: x-large;
+}
+
+.wrapper .input-area{
+    display: flex;
+    gap: 20px;
+    height: 40px;
+}
+
+.input-area .check-button{
+    font-size: larger;
+    padding: 1% 3%;
+    background-color: rgb(201, 201, 253);
+    border-radius: 5px;
+}
+
+.input-area .check-button:hover{
+    background-color: rgb(235, 235, 253);
+}
+
+#enteredCaptchaValue{
+    font-size: larger;
+    padding-left: 5px;
+}
+
+
+header{
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 4%;
+
+}

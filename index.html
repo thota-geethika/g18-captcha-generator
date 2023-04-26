@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/46109a9d9c.js" crossorigin="anonymous"></script>
+    <title>Captcha Generator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Noto+Sans&family=Poppins&family=Rubik+Wet+Paint&family=Sedgwick+Ave+Display&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>Captcha generator</header>
+        <div class="captcha-area">
+            <div class="captcha-img">
+                <img src="images/captcha-bg.png" alt="Captcha-background">
+                <span class="captcha" id="actualCaptchaValue">Kzv7i3</span>
+            </div>
+            <button onclick="generateCaptcha()"><i class="fa-solid fa-rotate-right"></i></button>
+        </div>
+        <div class="input-area">
+            <input type="text" placeholder="Enter captcha" id="enteredCaptchaValue" required autofocus>
+            <button class="check-button" onclick="checkCaptcha()">Check</button>
+        </div>
+        <div class="status-text"  id="statusText"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
